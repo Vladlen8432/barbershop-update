@@ -1,0 +1,220 @@
+.hero {
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url('../../images/mobile/hero-bg2x.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: none;
+  }
+}
+
+.container-hero {
+  padding-top: 208px;
+  padding-bottom: 183px;
+  max-width: 420px;
+}
+
+@media screen and (min-width: 768px) {
+  .container-hero {
+    padding: 0;
+    position: relative;
+    display: flex;
+    max-width: 690px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container-hero {
+    padding: 0;
+    position: relative;
+    display: flex;
+    max-width: 1168px;
+  }
+}
+
+.sub-title-hero {
+  display: flex;
+  align-items: center;
+  color: var(--transparent-color);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+
+.sub-title-hero::before {
+  content: '';
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  background-color: var(--transparent-color);
+  margin-right: 20px;
+}
+
+.header-main {
+  margin-top: 20px;
+  color: var(--white-color);
+  font-family: 'Raleway';
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+}
+
+.descr-hero {
+  max-width: 306px;
+  color: var(--lavender-mist);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.32px;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .sub-title-hero,
+  .sub-title-hero::before,
+  .header-main,
+  .descr-hero {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .left-side {
+    display: none;
+  }
+}
+
+.left-side {
+  margin-top: 200px;
+  width: 120px;
+  padding-top: 370px;
+}
+
+@media screen and (min-width: 768px) {
+  .left-side {
+    width: 105px;
+  }
+}
+
+.rotate-social {
+  display: flex;
+  gap: 40px;
+  transform: rotate(-90deg);
+}
+
+.social-side {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.2px;
+}
+
+.social-side-link {
+  color: var(--black-color);
+  transition: color 0.3s ease;
+}
+
+.social-side-link:hover,
+.social-side-link:focus {
+  color: var(--orange-color);
+}
+
+.instagram {
+  display: flex;
+  align-items: center;
+}
+
+.instagram::before {
+  content: '';
+  display: block;
+  background-color: var(--black-color);
+  width: 60px;
+  height: 1px;
+  margin-right: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .right-side {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .right-side {
+    padding-top: 272px;
+    padding-bottom: 245px;
+    width: 100%;
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)
+      ),
+      url('../../images/tablet/hero-bg2x.jpg');
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .right-side {
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)
+      ),
+      url('../../images/desktop/hero-bg2x.jpg');
+    width: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.sub-title-hero-tab-desk {
+  display: flex;
+  align-items: center;
+  color: var(--transparent-color);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.sub-title-hero-tab-desk::before {
+  content: '';
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  background-color: var(--transparent-color);
+  margin-right: 20px;
+  margin-left: 120px;
+}
+
+.header-main-tab-desk {
+  color: var(--white-color);
+  font-family: 'Raleway';
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  margin-top: 20px;
+  margin-left: 120px;
+}
+
+.descr-hero-tab-desk {
+  color: var(--lavender-mist);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.32px;
+  max-width: 355px;
+  margin-top: 20px;
+  margin-left: 120px;
+}

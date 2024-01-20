@@ -1,0 +1,182 @@
+.container-section-three {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-top: 84px;
+  padding-bottom: 84px;
+  max-width: 420px;
+}
+
+@media screen and (min-width: 768px) {
+  .container-section-three {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    max-width: 690px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container-section-three {
+    flex-direction: row;
+    gap: 130px;
+    padding-top: 121px;
+    padding-bottom: 130px;
+    max-width: 1168px;
+  }
+}
+
+.container-section-three-left {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .container-section-three-left {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container-section-three-left {
+    justify-content: flex-start;
+    margin-left: 100px;
+  }
+}
+
+.container-box-l {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  margin-top: 44px;
+}
+
+/* '.container-box-l' for tablet has the same properties */
+
+@media screen and (min-width: 1280px) {
+  .container-box-l {
+    margin-top: 0;
+  }
+}
+
+.container-box-r {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  margin-top: 79px;
+}
+
+/* '.container-box-r' for tablet has the same properties */
+
+@media screen and (min-width: 1280px) {
+  .container-box-r {
+    margin-top: 35px;
+  }
+}
+
+.sub-title-section-three {
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  color: var(--black-color);
+}
+
+/* '.sub-title-section-three' for tablet has the same properties */
+
+.sub-title-section-three::before {
+  display: inline-block;
+  content: '';
+  background-color: var(--black-color);
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+}
+
+/* '.sub-title-section-three::before' for tablet has the same properties */
+
+.header-section-three {
+  color: var(--black-color);
+  font-family: 'Raleway';
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 2.1px;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 1280px) {
+  .header-section-three {
+    max-width: 420px;
+  }
+}
+
+.section-three-par {
+  color: var(--gray-color);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.36px;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-three-par {
+    max-width: 500px;
+  }
+}
+
+.section-three-box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+  align-items: center;
+  justify-content: center;
+  width: 193px;
+  height: 133px;
+  background-color: var(--light-gray);
+}
+
+@media screen and (min-width: 768px) {
+  .section-three-box {
+    width: 210px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section-three-box {
+    width: 170px;
+  }
+}
+
+.client-count {
+  display: flex;
+  align-items: center;
+  color: var(--black-color);
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 2.1px;
+}
+
+/* '.client-count' for tablet and desktop has the same properties */
+
+.client-count::after {
+  content: '+';
+  color: var(--orange-color);
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* '.client-count::after' for tablet and desktop has the same properties */
+
+.client-text {
+  color: var(--black-color);
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  max-width: 122px;
+}
+
+/* '.client-text' for tablet and desktop has the same properties */

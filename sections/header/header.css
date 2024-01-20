@@ -1,0 +1,134 @@
+.container-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+  max-width: 420px;
+}
+
+@media screen and (min-width: 768px) {
+  .container-header {
+    max-width: 690px;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container-header {
+    max-width: 1168px;
+    justify-content: flex-start;
+  }
+}
+
+.logo-head {
+  z-index: 1;
+}
+
+.logo-icon {
+  width: 69px;
+  height: 55px;
+  fill: var(--white-color);
+}
+
+@media screen and (min-width: 768px) {
+  .logo-icon {
+    fill: var(--black-color);
+  }
+}
+
+.list-header {
+  display: flex;
+  gap: 24px;
+  margin-left: 70px;
+}
+
+@media screen and (min-width: 1280px) {
+  .list-header {
+    gap: 40px;
+  }
+}
+
+.list-header-item {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.list-header-link {
+  color: var(--white-color);
+  transition: color 0.3s ease;
+}
+
+.list-header-link:hover,
+.list-header-link:focus {
+  color: var(--orange-color);
+}
+
+.burger-menu {
+  width: 40px;
+  height: 40px;
+  fill: var(--white-color);
+}
+
+@media screen and (min-width: 768px) {
+  .burger-menu {
+    display: none;
+  }
+}
+
+.contact-address,
+.button-head {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .button-head {
+    display: block;
+    background-color: transparent;
+    color: var(--white-color);
+    border: 1px solid var(--orange-color);
+    border-radius: 25px;
+    padding: 12px 24px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
+    margin-left: 19px;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+  }
+
+  .button-head:hover,
+  .button-head:focus {
+    background-color: var(--orange-color);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .button-head {
+    margin-left: 33px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contact-address {
+    display: block;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-left: 294px;
+    z-index: 1;
+  }
+
+  .contact-link {
+    color: var(--white-color);
+    transition: color 0.3s ease;
+  }
+
+  .contact-link:hover,
+  .contact-link:focus {
+    color: var(--orange-color);
+  }
+}

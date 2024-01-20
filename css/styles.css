@@ -1,0 +1,98 @@
+:root {
+  --white-color: #fff;
+  --black-color: #303030;
+  --gray-color: #555;
+  --lavender-mist: #9da4bd;
+  --orange-color: #ff6c00;
+  --light-gray: #f7f7f7;
+  --transparent-color: rgba(157, 164, 189, 0.6);
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+nav {
+  display: none;
+  top: 0;
+  left: 0;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    display: block;
+    z-index: 1;
+  }
+}
+
+button {
+  cursor: pointer;
+  padding: 0;
+}
+
+.container {
+  max-width: 480px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 39px;
+    padding-right: 39px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 56px;
+    padding-right: 56px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
